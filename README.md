@@ -2,7 +2,11 @@
 
 MRPFX FastAPI backend (WordPress-compatible API).
 
-## Railway start command
+## Railway
+
+Start command is defined in `railway.toml`. Railway/Railpack cannot auto-detect this app because the entrypoint is `app/main.py`, not `main.py` at the repo root.
+
+Manual override (if needed): **Settings → Deploy → Custom Start Command**
 
 ```bash
 gunicorn app.main:app -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT
