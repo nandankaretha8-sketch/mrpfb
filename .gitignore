@@ -1,0 +1,25 @@
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Local database & logs
+*.db
+*.log
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Accidental / local junk
+=0.2.0
+import os
